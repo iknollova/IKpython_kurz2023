@@ -9,7 +9,7 @@ def format_tel_cisla (tel_cislo):
     Fce na overeni formatu císla
     """
     val_cislo= ()
-    if len(tel_cislo) < 9 or len(tel_cislo)> 13:
+    if len(tel_cislo) != 9 or len(tel_cislo)!= 13:
         val_cislo = False
     elif len(tel_cislo)== 13:
             if tel_cislo[0:4] in "+420":
