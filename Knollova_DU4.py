@@ -1,5 +1,5 @@
 #DU 4
-#zadání a kontrola tel. čísla, výpočet ceny sms
+#zadání a kontrola tel čísla, výpočet ceny sms
 
 from math import ceil
 
@@ -9,15 +9,15 @@ def format_tel_cisla (tel_cislo):
     Fce na overeni formatu císla
     """
     val_cislo= ()
-    if len(tel_cislo) != 9 or len(tel_cislo)!= 13:
-        val_cislo = False
+    if len(tel_cislo) == 9:
+        val_cislo = True
     elif len(tel_cislo)== 13:
             if tel_cislo[0:4] in "+420":
                 val_cislo = True
             else:
                 val_cislo = False
     else:
-        val_cislo = True
+        val_cislo = False
     return val_cislo
 
 
